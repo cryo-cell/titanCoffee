@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Coffee Run Account Login!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <div class="topspace">
+                    <a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a>
+                </div>
+                <div class="upper-wrapper">
+                    <a href="index.html"><img id="spartan-color" src="./img/spartan-color.png" alt=""></a>
+                    <h1>TCR Login</h1>
+                </div>
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li id="registration"><a href="registration.html">Registration</a></li>
+                            <li id="login"><a href="login.html">Menu</a></li>
+                            <li id="contact"><a href="">Contact</a></li>
+                            <li id="about"><a href="">About</a></li>
+                            <li id="apply"><a href="apply.html">Apply for Credit</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+            
+                <div class="slim">
+                   
+                </div>
+            
+                <div class="thick">
+                    <h3>Log Into Your Account!</h3>
+                    <div class="main-menu">
+                        <form name="loginForm" action="" method="GET">
+                            <table>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input id="email" type="text" name="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><input id="pass" type="text" name="pass"></td>
+                                    <!-- Now you do not need to have javascript for client side validations like empty text box would
+                                    never be submitted because HTML5 introduced a new attribute called required which would be
+                                    used as follows and would insist to have a value:
+                                    -->
+                                </tr>     
+                            </table>
+                            <div class="twoBtn">
+                                <input id="submit" type="button" name="button" value="Log In" onClick="validLogin();">
+                                <input type="reset" value="Reset">
+                            </div>
+                            <p>New member registration <a href="./registration.html">here</a></p>
+                        </form>
+                        <table >
+                            <tbody id="tableData">
+
+                            </tbody>
+
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>Copyright © 2024 St. Petersburg College</small>            
+            <p><a href="mailto:vashcarpenter@gmail.com">vashcarpenter@gmail.com</a></p>
+
+        </footer>
+    </div>
+<script src="./js/login.js"></script>
+</body>
+</html>

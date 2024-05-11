@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Coffee Run Credit Application!</title>
+    <link rel="stylesheet" href="./css/apply.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <div class="topspace">
+                    <a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a>
+                </div>
+                <div class="upper-wrapper">
+                    <a href="./index.html"><img id="spartan-color" src="./img/spartan-color.png" alt=""></a>
+                    <h1>Titan Credit Run</h1>
+                </div>
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li id="registration"><a href="registration.html">Registration</a></li>
+                            <li id="login"><a href="login.html">Menu</a></li>
+                            <li id="contact"><a href="">Contact</a></li>
+                            <li id="about"><a href="">About</a></li>
+                            <li id="apply"><a href="apply.html">Apply for Credit</a></li>
+                            <li id="index"><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-wrapper">
+            
+                <div class="slim">
+                   
+                </div>
+            
+                <div class="thick">
+                    <h3>Your Titan Coffee Run Credit Card!</h3>
+                    <div class="main-menu">
+                        <form name="creditForm" action="" method="GET">
+                            <table>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input id="email" type="text" name="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>First Name:</td>
+                                    <td><input id="fname" type="text" name="fname"></td>
+                                    <!-- Now you do not need to have javascript for client side validations like empty text box would
+                                    never be submitted because HTML5 introduced a new attribute called required which would be
+                                    used as follows and would insist to have a value:
+                                    -->
+                                </tr>
+                                <tr>
+                                    <td>Last Name:</td>
+                                    <td><input id="lname" type="text" name="lname"></td>
+                                </tr>
+                                <tr>
+                                    <td>City:</td>
+                                    <td><input id="city" type="text" name="city"></td>
+                                </tr>
+                                <tr>
+                                    <td>State:</td>
+                                    <td><input id="state" type="text" name="state"></td>
+                                </tr>
+                                <tr>
+                                    <td>ZIP Code:</td>
+                                    <td><input id="zip"  type="text" name="zip"></td>
+                                </tr>
+                                <tr>
+                                    <td>Gross Income:</td>
+                                    <td><input id="gross"  type="text" name="gross"></td>
+                                </tr>
+                                <tr>
+                                    <td>Last Four #'s of SSN:</td>
+                                    <td><input id="ssn" type="text" name="social"></td>
+                                </tr>
+                            </table>
+                            <div class="twoBtn">
+                                <input id="submit" type="button" name="button" value="Apply" onClick="validate();">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </form>
+                            <table >
+                                <tbody id="tableData">
+
+                                </tbody>
+
+                            </table>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>Copyright © 2024 St. Petersburg College</small>            
+            <p><a href="mailto:vashcarpenter@gmail.com">vashcarpenter@gmail.com</a></p>
+
+        </footer>
+    </div>
+<script src="./js/qualify.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Coffee Run Menu: Hot Coffee!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <div class="topspace">
+                    <a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a>
+                </div>
+                <div class="upper-wrapper">
+                    <a href="./dashboard.html"></a><img id="spartan-color" src="./img/Dreads-Style-Free-Vector-131117-Vector-Art-at-Vecteezy.jpg" alt="">
+                    <h1 id="title">Titan Coffee Run Menu</h1>
+                                        <span id="cartSymbol" onclick="window.location.href='checkout.html'">Cart <span id="cartQty"></span></span>
+
+                    <button type="button" onclick="checkOut()"> Check Out</button>
+
+                    <!--<button type="button" onclick="clearCart()"> Clear Cart</button>-->
+                    <span id="cartSymbol" onclick="window.location.href='checkout.html'">Cart <span id="cartQty"></span></span>
+
+
+
+
+                </div>
+
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li id="sales"><a href="sales.html">Sales</a></li>
+                            <li id="dash"><a href="dashboard.html">Menu</a></li>
+                            <li id="contact"><a href="">Contact</a></li>
+                            <li id="about"><a href="">About</a></li>
+                            <li id="logOut"><a href="index.html">Log Out</a></li>
+                            <li id="checkOut"><a href="checkout.html">Check Out</a></li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <div id="ad-container">
+                    <img id="ad-img" src="./img/hot-coffee.jpg" alt="" width="300" height="250">
+                </div>
+            
+                <div class="slim">
+                    <div class="drinks-menu">
+                        <nav>
+                            <ul>
+                                <a href="hotcoffee.html"><li>Hot Coffee</li></a>
+                                <a href="hotcoffee.html"><li>Iced Coffee <span class="incoming">Coming Soon</span></li></a>
+                                <a href="hotcoffee.html"><li>Tea & Boba <span class="incoming">Coming Soon</span></li></a>
+                                <a href="hotcoffee.html"><li>Frozen Drinks <span class="incoming">Coming Soon</span></li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            
+                <div class="thick">
+                    <h2>Hot Coffee</h2>
+                    <div class="main-menu secondary">
+
+                        <div class="espresso main">
+                            <div class="quick-view">
+
+
+                            <h3>Espresso</h3>
+                            <img src="./img/espresso.jpg" alt="Our barista pouring a hot foam heart design into espresso.">
+                            <span>Espresso</span>
+
+
+                            <div class="quick-view-content">
+                                <form action="">
+                                    <input type="radio" id="singleEsp" name="esp" value="2" placeholder="small">
+                                    <label for="singleEsp">$2.00 Single</label>
+                                    <input type="radio" id="doubleEsp" name="esp" value="3" placeholder="medium">
+                                    <label for="doubleEsp">$3.00 Double</label>
+                                    <input type="radio" id="tripleEsp" name="esp" value="3.5" placeholder="large">
+                                    <label for="tripleEsp">$3.50 Triple</label>
+                                    <input type="number" id="quantityEsp" class="quantity" value="0" name="quant">
+                                
+                                <button type="button" onclick="cartValues()">
+                                    Add to Cart
+                                </button>
+
+                                </form>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="americano main">
+                            <div class="quick-view">
+
+                            <h3>Americano</h3>
+                            <img src="./img/americano.jpg" alt="Our barista pouring a hot foam heart design into espresso.">
+                            <span>Americano</span>
+                            <div class="quick-view-content">
+                                <form action="">
+                                    <input type="radio" id="singleAm" name="am" value="2" placeholder="small">
+                                    <label for="singleAm">$2.00 Single</label>
+
+                                    <input type="radio" id="doubleAm" name="am" value="3" placeholder="medium">
+                                    <label for="doubleAm">$3.00 Double</label>
+                                    <input type="radio" id="tripleAm" name="am" value="3.5" placeholder="large">
+                                    <label for="tripleAm">$3.50 Triple</label>
+                                    <input type="number" inputmode="numeric" pattern="[0-9]*" id="quantityAm" value="0" class="quantity">
+
+                              
+                                    <input type="checkbox" name="breve" id="breve">
+                                    <label for="breve">Breve?</label>
+                                <button type="button" onclick="cartValues()">
+                                    Add to Cart
+                                </button>
+
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cappucino main">
+                            <div class="quick-view">
+
+                            <h3>Cappucino</h3>
+                            <img src="./img/hot-coffee.jpg" alt="Our barista pouring a hot foam heart design into espresso.">
+                            <span>Cappucino</span>
+
+                            <div class="quick-view-content">
+                                <form action="">
+                                    <input type="radio" id="singleCap" name="cap" value="3" placeholder="small">
+                                    <label for="singleCap">$3.00 Single Cappucino</label>
+                                    <input type="radio" id="doubleCap" name="cap" value="4" placeholder="medium">
+                                    <label for="doubleCap">$4.00 Double Cappucino</label>
+                                    <input type="radio" id="tripleCap" name="cap" value="5" placeholder="large">
+                                    <label for="tripleCap">$5.00 Triple Cappucino</label>
+                                    <input type="number" inputmode="numeric" pattern="[0-9]*" id="quantityCap" value="0" class="quantity">
+
+                                <button type="button" onclick="cartValues()">
+                                    Add to Cart
+                                </button>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="latte main">
+                            <div class="quick-view">
+
+                            <h3>Latte</h3>
+                            <img src="./img/hot-coffee.jpg" alt="Our barista pouring a hot foam heart design into espresso.">
+                            <span>Latte</span>
+                            <div class="quick-view-content">
+                                <form action="">
+                                    <input type="radio" id="singleLat" name="lat" value="4" placeholder="small">
+                                    <label for="singleLat">$4.00 Single Latte</label>
+                                    <input type="radio" id="doubleLat" name="lat" value="5" placeholder="medium">
+                                    <label for="doubleLat">$5.00 Double Latte</label>
+                                    <input type="radio" id="tripleLat" name="lat" value="6" placeholder="large">
+                                    <label for="tripleLat">$6.00 Triple Latte</label>
+                                    <input type="number" inputmode="numeric" pattern="[0-9]*" id="quantityLat" value="0" class="quantity">
+                                    <button type="button" onclick="cartValues()">
+                                        Add to Cart
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="macchiato main">
+                            <div class="quick-view">
+
+                            <h3>Macchiato</h3>
+                            <img src="./img/macchiato.jpg" alt="Our barista pouring a hot foam heart design into espresso.">
+                            <span>Macchiato</span>
+                            <div class="quick-view-content">
+                                <form action="">
+                                    <input type="radio" id="singleMacc" name="macc" value="4.5" placeholder="small">
+                                    <label for="singleMacc">$4.50 Single Macchiato</label>
+                                    <input type="radio" id="doubleMacc" name="macc" value="6" placeholder="medium">
+                                    <label for="doubleMacc">$6.00 Double Macchiato</label>
+                                    <input type="radio" id="tripleMacc" name="macc" value="7.25" placeholder="large">
+                                    <label for="tripleMacc">$7.25 Triple Macchiato</label>
+                                    <input type="number" inputmode="numeric" pattern="[0-9]*" id="quantityMacc" value="0" class="quantity">
+
+
+                                    <button type="reset" onclick="cartValues()">
+                                        Add to Cart
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>  
+ 
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>Copyright © 2024 St. Petersburg College</small>            
+            <p><a href="mailto:vashcarpenter@gmail.com">vashcarpenter@gmail.com</a></p>
+
+        </footer>
+    </div>
+    <script src="./js/checkout.js"></script>
+
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/cart.js"></script>
+
+</body>
+</html>

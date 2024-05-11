@@ -1,0 +1,332 @@
+body{
+    background: white;
+    margin: 0;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topspace {
+    background: #042c51;
+    height: 3.5vh;
+    padding-right: 24vh;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.8vh;
+}
+
+.upper-wrapper {
+    background: rgba(15,66,111,1);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20vh;
+    color: white; 
+}
+
+h1 {
+    display: flex;
+    flex-flow: column wrap;
+    width: auto;
+    position: relative;
+    right: 4vh;  
+    font-weight: 500;
+    font-size: 3.5vh;
+    border-bottom: solid 5px #042c51;
+}
+
+.topspace a{
+    color: #89bc40;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: white
+}
+img{
+    width: 45vh; 
+
+}
+#spartan-color {
+    width: 12vh; 
+    margin-right: 5vh; 
+    position: relative; 
+    border-radius: 50%;
+    border:solid 7px #042c51;
+    background-image: url("../img/spartan-bw.png");
+    animation: 10s;
+}
+.quick-view-content{
+display: none
+}
+.quick-view:hover > .quick-view-content{
+    display: block;
+}
+
+#cartSymbol {
+    position: fixed;
+    left: 100px;
+    color: black;
+}
+
+#cartQty {
+    color: red;
+}
+@keyframes spartan-color {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-wrapper{
+    height: 2.5vh;
+    border-top: solid 4px darkgoldenrod;
+    border-bottom: solid 4px #042c51; 
+    box-shadow: 2px 4px  3px grey;
+    padding-right: 5vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-wrapper ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+    text-transform: uppercase;
+}
+
+.nav-wrapper li {
+font-size: 2.3vh;
+margin-top: -2.1vh;
+}
+
+.nav-wrapper a:visited {
+    color: #042c51;
+    text-decoration: none   ;
+}
+.nav-wrapper a:hover {
+    color: darkgoldenrod;
+    text-decoration: none   ;
+}
+
+
+
+.main-wrapper {
+    display: flex;
+    font-size: 5vh;
+}
+
+
+button {
+    font-weight: 900;
+background-color: #00406e;
+color: whitesmoke;
+height: 8vh;
+width: 25vh; 
+margin-top:3vh;
+margin-left: 15vh;
+margin-right: 15vh;
+border-radius: 15px;
+border: solid 5px goldenrod;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #00406e;
+
+}
+.twoBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.twoBtn input{
+font-weight: 900;
+background-color: #00406e;
+color: whitesmoke;
+height: 8vh;
+width: 25vh;    
+margin-top:3vh;
+margin-left: 15vh;
+margin-right: 15vh;
+border-radius: 15px;
+border: solid 5px darkgoldenrod;
+
+}
+
+.twoBtn input:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #00406e;
+
+
+}
+.slim {
+    width: 20%;
+    font-size: 3vh;
+    background-color: rgba(169, 161, 145, 0.1);
+    background-image: url("http://www.zingerbugimages.com/backgrounds/indigo_textured_rock_seamless_pattern.jpg");
+    color: rgba(15,66,111,1);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.thick {
+    width: 84%;
+    height: auto;
+    background-color: rgba(169, 161, 145, 0.1);
+    background-image: url("http://www.zingerbugimages.com/backgrounds/indigo_textured_rock_seamless_pattern.jpg");
+    color: #00406e;
+}
+
+.credentialButtons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    margin-left: 3vh;
+   
+}
+
+.loginBtn, .registerBtn {
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 75px;
+}
+
+.loginBanner:hover, .registerBanner:hover{
+    border-radius: 50%;
+    border:solid 5px #89bc40;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    
+    }
+    to {
+        opacity: 1;
+    }
+} 
+.loginBanner {
+    animation: fadeIn 2s;
+}
+.drinks-menu{
+    position: fixed;
+}
+.drinks-menu li {
+    margin-bottom: 3vh;
+    background-color: #89bc40;
+    padding: 2vh;
+    margin-right: 5vh;
+    border-radius: 10% 50%;
+    border: solid 4px goldenrod;
+    width: 20vh;
+    height: 7vh;
+    color: #fff;
+}
+
+.main-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between  ;
+
+
+}
+
+.main{
+    width: 70vh;
+    margin-bottom: 5vh;
+    position: relative;
+    
+}
+#canvasContainer {
+    width: 850px;
+    height: 525px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #00406e;
+    color: ivory;
+    padding: 25px;  
+    border-radius: 15px;
+    margin-bottom: 5vh;
+    border: solid 5px darkgoldenrod;
+}
+form a{
+    color: white;
+}
+form a:hover{
+    color: darkgoldenrod;
+}
+
+p a{
+    color: darkgoldenrod;
+}
+
+p a:hover {
+    color: #fff;
+}
+
+.main-menu span {
+    position: relative;
+    bottom: 15vh;
+    margin-right: 10vh;
+}
+
+
+.main-menu img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: solid 5px #00406e;
+}
+
+.main-menu img:hover {
+    border: solid 5px #89bc40;
+}
+
+#ad-img {
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 162vh;
+    border: solid 5px #89bc40;
+}
+
+footer {
+    background-color: #042c51;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    color:#89bc40;
+}
