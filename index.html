@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <header>
-            <div class="wrapper">
-                <div class="topspace">
-                    <a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a>
-                    <a href="./sales.html">ADMIN</a>
-
+            <div class="header-wrapper">
+                <div class="topspace" class="container">
+                    <ul>
+                        <li><a href="./sales.html">ADMIN</a></li>
+                        <li><a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a></li>
+                    </ul>
                 </div>
-                <div class="upper-wrapper">
-                    <a href="./index.html"><img id="spartan-color" src="./img/spartan-color.png" alt=""></a>
-                    <h1>Titan Coffee Run</h1>
+                <div  class="upper-wrapper" class="container">
+                    <div class  ="logo-container">
+                        <a href="./index.html"><img class="img-responsive" id="spartan-color" src="./img/spartan-color.png" alt=""></a>
+                        <h1>Titan Coffee Run</h1>
+                    </div>
                 </div>
-                <div class="nav-wrapper">
+                <div class="nav-wrapper" class="container">
                     <nav>
                         <ul>
                             <li id="registration"><a href="registration.html">Registration</a></li>
@@ -30,16 +33,13 @@
                         </ul>
                     </nav>
                 </div>
+                
             </div>
         </header>
-
+        
         <main>
             <div class="main-wrapper">
-                <div id="ad-container">
-                    <img id="ad-img" src="./img/hot-coffee.jpg" alt="" width="300" height="250">
-                </div>
-            
-                <div class="slim">
+                <div class="slim" >
                     <div class="drinks-menu">
                         <nav>
                             <ul>
@@ -51,19 +51,34 @@
                         </nav>
                     </div>
                 </div>
-            
+                
+                
                 <div class="thick">
-                    
                     <div class="credentialButtons">
-                        <div class="loginBtn">
-                            <a href="login.html"><img class="loginBanner" src="./img/spartan-color.png" alt=""></a>
-                            <a href="login.html"><button id="login">Log In</button></a>
+                        <div class="login-container">
+                            <fieldset id="loginField">
+                                <legend>
+                                    Login
+                                </legend>
+                                <a href="./login.html">
+                                    <img class="img-credential" id="spartan-credential" src="./img/spartan-color.png" alt="">
+                                </a>
+                            </fieldset>  
                         </div>
-                        <div class="registerBtn">
-                            <a href="registration.html"><img class="registerBanner" src="./img/spartan-bw.png" alt=""></a>
-                            <a href="registration.html"><button id="register">Register</button></a>
+                        <div class="login-container ">
+                            <fieldset id="registerField">
+                                <legend>
+                                    Register
+                                </legend>
+                                <a href="./login.html">
+                                    <img class="img-credential" id="spartan-bw" src="./img/spartan-bw.png" alt="">
+                                </a>
+                            </fieldset>                        
                         </div>
                     </div>
+                </div>
+                <div class="ad-container">
+                    <img class="img-responsive" id="ad-img" src="./img/hot-coffee.jpg" alt="">
                 </div>
             </div>
         </main>

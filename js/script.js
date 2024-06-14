@@ -1,21 +1,40 @@
-let banner = [
-    ["./img/hot-coffee.jpg"],
+let adBanner = [
     ["./img/iced-coffee.jpg"],
+    ["./img/hot-coffee.jpg"],
     ["./img/frozen-coffee.jpg"],
     ["./img/teaNboba.jpg"]
 ];
 
 let x = 0;
 
-document.getElementById('ad-img').setAttribute("src", banner[x]);
+document.getElementById('ad-img').setAttribute("src", adBanner[x]);
 
-if (x < banner.length){
+if (x < adBanner.length){
     setInterval(function(){
-    document.getElementById('ad-img').setAttribute("src", banner[x]);
+    document.getElementById('ad-img').setAttribute("src", adBanner[x]);
     x++;
-    if (x > banner.length-1){
+    if (x > adBanner.length-1){
         x = 0;
-    }}, 5000);
+    }}, 1000);
 }
- 
+
+/*let logoBanner = [
+    ["./img/spartan-color.png"],
+    ["./img/iced-coffee.jpg"],
+];
+
+let y = 0;
+
+document.getElementById('spartan-color').setAttribute("src", logoBanner[y]);
+
+if (y < logoBanner.length){
+    setInterval(function(){
+    document.getElementById('spartan-color').setAttribute("src", logoBanner[y]);
+    y++;
+    if (y > logoBanner.length-1){
+        y = 0;
+    }}, 2000);
+}
+ */
+//logo banner
    

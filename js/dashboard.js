@@ -22,7 +22,7 @@ else title.innerHTML = JSON.parse(localStorage.getItem("profile"))
 if(JSON.parse(localStorage.getItem("profile")) !== "Admin"){
     document.getElementById("sales").style.display = "none"
 }
-let banner = [
+/*let banner = [
     ["./img/hot-coffee.jpg"],
     ["./img/iced-coffee.jpg"],
     ["./img/frozen-coffee.jpg"],
@@ -40,4 +40,4 @@ if (x < banner.length){
     if (x > banner.length-1){
         x = 0;
     }}, 5000);
-}
+}*/

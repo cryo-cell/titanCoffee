@@ -1,4 +1,235 @@
+*{
+    display: flex;
+    flex-flow: column wrap;
+
+}
 body{
+    background: white;
+    margin: 0;
+    color: #042c51;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    min-width: 100%;
+    text-align: center;
+    margin: auto;
+    border: solid 5px darkgoldenrod;
+
+}
+.container {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+header, main, footer, .container {
+    min-width: 100%;
+}
+#header-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+.topspace{
+    height: 4vh;
+    background: #042c51;
+    line-height: 4vh;
+
+}
+.upper-wrapper{
+    background: rgba(15,66,111,1);
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7vh;
+    border-bottom: solid 5px darkgoldenrod;
+}
+.upper-wrapper-logged-in{
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h1{
+    border-bottom: solid 5px #042c51;
+}
+.logo-container{
+    display: flex;
+    flex-flow: row nowrap;
+
+
+}
+.nav-wrapper{
+    border-bottom: solid 2.5px #042c51;
+    height: 2.5vh;
+    justify-content: start;
+
+
+}
+h1{
+    text-align: center;
+}
+ul{
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: -0.1%;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;  
+    color: #89bc40;
+}
+.nav-wrapper a{
+    color: #042c51;
+    font-size: 2.5vh;
+
+}
+.credentialButtons{
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-top: 5%;
+    height: 40vh;
+    background-color: lightslategray;
+    color: white;
+}
+.login-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 5%;
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 3vh;
+    /*height: 30%;
+    line-height: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+    display:block;*/
+}
+.img-responsive {
+    max-width: 50%;
+    margin: auto;
+}
+.img-credential{
+    max-width: 75%;
+    border: inset 35px #042c51;
+    border-radius: 50%;
+    /*rotate: -8.5deg;*/
+
+}
+.dash-img {
+    max-width: 100%;
+}
+.dash-profile{
+    max-width: 8vh;
+}
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.menu-item{
+    width: 45%;
+}
+#spartan-color{
+    max-height: 15vh;
+    border: solid 5px #042c51;
+    border-radius: 50%;
+}
+.ad-container{
+    min-height: 24vh;
+    background-color: silver;
+}
+#ad-img{
+    height: 10vh;
+    border: solid 5px #89bc40;
+}
+.drinks-menu {
+    display: none;
+}
+footer{
+    background: #042c51;
+    flex-flow: row nowrap;
+    font-size:medium;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.main{
+    width:100%;
+}
+.quick-view, .quick-view-content{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-width: 100%;
+
+}
+
+.quick-view form{
+    font-size: 32px;
+min-width: 65%;
+}
+#mobileNav{
+border: solid 1px black;
+margin: auto;
+}
+
+.radio-option{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    line-height: 10vh;
+    border: solid 1px #042c51;
+    color: #89bc40;
+    background-color: #042c51;
+}
+.quantity-input input   {
+    text-align: center;
+    font-size: 32px;
+}
+
+fieldset{
+    border-radius: 50%;
+    height: 15vh;
+    width: 40vh;
+    border: inset 25px white;
+    margin: auto;
+    font-size: 64px;
+    rotate: -20deg;
+
+}
+#loginField img{
+    rotate: 45deg;
+
+}
+#registerField{
+    rotate: 30deg;
+}
+#registerField img{
+    rotate: -45deg;
+
+    transform: scale(-1, 1);
+
+}
+/*body{
     background: white;
     margin: 0;
     color: white;
@@ -330,3 +561,4 @@ footer {
 footer a{
     color:#89bc40;
 }
+*/

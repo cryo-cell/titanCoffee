@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Coffee Run: Dashboard!</title>
-    <link rel="stylesheet" href="./css/styles-menu.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <header>
-            <div class="wrapper">
-                <div class="topspace">
+            <div class="header-wrapper">
+                <div class="topspace" class="container">
                     <a href="https://www.spcollege.edu/foundation/give-now">SUPPORT SPC</a>
                 </div>
-                <div class="upper-wrapper">
-                    <a href="./dashboard.html"></a><img id="spartan-color" src="./img/Dreads-Style-Free-Vector-131117-Vector-Art-at-Vecteezy.jpg" alt="">
+                <div class="upper-wrapper-logged-in">
+                    <a href="./dashboard.html"></a><img class="dash-profile" id="spartan-color" src="./img/Dreads-Style-Free-Vector-131117-Vector-Art-at-Vecteezy.jpg" alt="">
                     <h1 id="title">Titan Coffee Run Dashboard</h1>
-
                 </div>
-                <div class="nav-wrapper">
+                <div class="nav-wrapper" class="container">
                     <nav>
                         <ul>
                             <li id="sales"><a href="sales.html">Sales</a></li>
@@ -33,9 +32,6 @@
         </header>
         <main>
             <div class="main-wrapper">
-                <div id="ad-container">
-                    <img id="ad-img" src="./img/hot-coffee.jpg" alt="" width="300" height="250">
-                </div>
             
                 <div class="slim">
                     <div class="drinks-menu">
@@ -50,23 +46,23 @@
                     </div>
                 </div>
             
-                <div class="thick">
+                <div class="thick" class="container">
                     <h3>Menu</h3>
                     <div class="main-menu">
-                        <div class="hot">
-                            <a href="hotcoffee.html"><img src="./img/hot-coffee.jpg" alt="Our barista pouring a hot foam heart design into espresso."></a>
+                        <div id="hot" class="menu-item">
+                            <a href="hotcoffee.html"><img class=" dash-img" src="./img/hot-coffee.jpg" alt="Our barista pouring a hot foam heart design into espresso."></a>
                             <span>Hot Coffee</span>
                         </div>
-                        <div class="iced">
-                            <a href="hotcoffee.html"><img src="./img/iced-coffee.jpg" alt=""></a>
+                        <div id="iced" class="menu-item">
+                            <a href="hotcoffee.html"><img class=" dash-img" src="./img/iced-coffee.jpg" alt=""></a>
                             <span>Iced Coffee</span>
                         </div>
-                        <div class="tea">
-                            <a href="hotcoffee.html"><img src="./img/teaNboba.jpg" alt=""></a>
+                        <div id="tea" class="menu-item">
+                            <a href="hotcoffee.html"><img class=" dash-img" src="./img/teaNboba.jpg" alt=""></a>
                             <span>Tea & Boba</span>
                         </div>
-                        <div class="frozen">
-                            <a href="hotcoffee.html"><img src="./img/frozen-coffee.jpg" alt=""></a>
+                        <div id="frozen"    class="menu-item">
+                            <a href="hotcoffee.html"><img class=" dash-img" src="./img/frozen-coffee.jpg" alt=""></a>
                             <span>Frozen Drinks</span>
                         </div>
                         
